@@ -1,11 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- manrope google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Use daisyUI from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome icon  -->
+    <script src="https://kit.fontawesome.com/bba20b78e5.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <header class="container px-10 mx-auto">
+
+        <div class="hero relative">
+            <div class="hero-content relative flex-col lg:flex-row">
+
+                <div>
+                    <h1 class="text-7xl font-extrabold capitalize">It's good <br>time at the <br> tea house</h1>
+                    <p class="py-6">Provident cupiditate volup time totatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary"> Esplore More</button>
+                </div>
+                <img src="images/banner.png" class="max-w-sm rounded-lg shadow-2xl" />
+
+                <div
+                    class=" absolute right-36 top-60  flex  rounded-md bg-yellow-50 t- items-center gap-5 drop-shadow-lg justify-center">
+                    <!-- class="flex ml-[400px] mt-[200px] rounded-md bg-yellow-50 t- items-center gap-5 drop-shadow-lg justify-center " -->
+                    <i class="fa-regular text-amber-400 text-3xl fa-star"></i>
+                    <di>
+                        <h3 class="text-7xl">5.00</h3>
+                        <p class="text-"></i> Trast Pilot Rating</p>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+    </header>
+    <main class="container mx-auto">
+        <!-- feature section  -->
+        <section class="text-center items-center mx-28">
+            <h2 class="text-5xl font-extrabold capitalize mb-5 "> our feature products</h2>
+            <p class=" mx-auto mb-10 lg:max-w-3xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+                veniam nam
+                perferendis unde
+                nulla accusamus tempora dolorem cum labore eos magni quam sed. Laudantium ipsum reprehenderit distinctio
+                ad. Adipisci, fuga?</p>
+
+            <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- first card  -->
+
+                <div class="card bg-gradient-to-r py-10 from-white to-yellow-50   bg-base-100 shadow-xl">
+                    <figure><img src="images/tea-1.png" alt="Milk Tea" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-3xl font-semibold text-center">Milk Tea</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                    </div>
+                </div>
+                <!-- scend card  -->
+
+                <div class="card bg-gradient-to-r py-10 from-white to-yellow-50   bg-base-100 shadow-xl">
+                    <figure><img src="images/tea-2.png" alt="Milk Tea" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-3xl font-semibold text-center">Milk Tea</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                    </div>
+                </div>
+                <!-- third card  -->
+
+                <div class="card bg-gradient-to-r py-10 from-white to-yellow-50   bg-base-100 shadow-xl">
+                    <figure><img src="images/tea-3.png" alt="Milk Tea" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-3xl font-semibold text-center">Milk Tea</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                    </div>
+                </div>
+                <!-- fourth card  -->
+
+                <div class="card bg-gradient-to-r py-10 from-white to-yellow-50 shadow-xl">
+                    <figure><img src="images/tea-4.png" alt="Milk Tea" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-3xl font-semibold text-center">Milk Tea</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- grid the fresh tea section  -->
+        <section class="flex  mx-28 my-12  flex-col gap-20 lg:flex-row flex-1 ">
+            <div class="grid gap-8 grid-cols-2">
+
+                <div class="bg-gradient-to-r py-10 from-yellow-100 to-yellow-50 rounded-xl"></div>
+                <div class="bg-gradient-to-r  from-yellow-100 to-yellow-50 rounded-xl row-span-2 px-8 py-12  ">
+                    <img src="images/fresh-1.png" alt="">
+                </div>
+                <div class="bg-gradient-to-r from-yellow-100 to-yellow-50 rounded-xl row-span-2 px-8 py-12 ">
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="bg-gradient-to-r py-10 from-yellow-100 to-yellow-50 rounded-xl  "></div>
+
+            </div>
+            <div class="space-y-5 flex-1">
+                <h1 class="text-5xl font-bold  ">Grait tea, Freshle <br> presented</h1>
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ut quidem ab, nisi doloribus
+                    nulla qui
+                    quaerat corporis reiciendis soluta, tenetur facere minima libero quia sed! Aliquid velit dolorum
+                    reiciendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, magni.?</p>
+
+                <h3 class="text-xl font-extrabold">Unique Tea</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus.</p>
+                <h3 class="text-xl font-extrabold">Premium Quality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, minus.</p>
+
+            </div>
+
+        </section>
+        <!-- super Clients  -->
+        <section class=" flex rounded-xl px-16 py-40 bg-gradient-to-r from-[#FF8938] to-[#F00]   mx-28 my-12 ">
+
+
+            <div class="text-5xl text-white font-extrabold ">
+                <h3>Meet Our Super <br> Clients</h3>
+                <p class=" leading-7 text-white text-xl font-semibold">There are many variations of passages of
+                    Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable. </p>
+                <button class="btn btn-primary">Show All</button>
+            </div>
+            <!-- review  -->
+            <div class="rounded-lg relative bg-white p-10 text-xl">
+                <div class="absolute -left-5 -top-5">
+                    <img src="images/client.png" alt=" client.png">
+                </div>
+                <p class=" text-gray-500 mt-5 mb-5">We are providing the best and suitable home insurance services for the
+                    people who are interested
+                    to treatment</p>
+                <h3 class="text-[#1C1C1C] font-bold mb-5">Ilham Yuda</h3>
+                <h5 class=" text-[#5D5A6F] font-semibold">Businessman</h5>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer></footer>
 </body>
+
 </html>
